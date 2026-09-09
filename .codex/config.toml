@@ -1,0 +1,17 @@
+# Repository-scoped MCP configuration. Codex loads this only for trusted projects.
+# No credentials belong in this file.
+
+[mcp_servers.context7]
+url = "https://mcp.context7.com/mcp"
+startup_timeout_sec = 20
+
+[mcp_servers.playwright]
+command = "sh"
+args = [".codex/run-playwright-mcp.sh"]
+startup_timeout_sec = 40
+tool_timeout_sec = 120
+
+[mcp_servers.github]
+url = "https://api.githubcopilot.com/mcp/"
+bearer_token_env_var = "GITHUB_PAT_TOKEN"
+startup_timeout_sec = 20

@@ -10,6 +10,7 @@ coverage/
 .cache/
 .eslintcache
 .nyc_output/
+.playwright-mcp/
 *.tsbuildinfo
 *.tgz
 
